@@ -1,6 +1,7 @@
 
 ![Yarilabs](assets/yarilabs_logo_vH_signature_neg_transp.png)
 ---
+## Follow us on social media
 * [twitter/yarilabs](https://twitter.com/yarilabs)
 * [instagram.com/yarilabs](https://instagram/yarilabs)
 ---
