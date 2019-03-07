@@ -172,6 +172,13 @@ Smart contract flow of data
 ## What is an ERC20 token?
 +++
 
+---?gist=onetapbeyond/494e0fecaf0d6a2aa2acadfb8eb9d6e8&lang=Scala&title=GIST: Scala Snippet
+
+@[25-29](Init Spark cluster data source)
+@[41-53](Build RDD[AWSTask] from source)
+@[57-62](Delegate RDD[AWSTask] to AWS Lambda)
++++
+
 ### ERC20 token
 ERC stands for Ethereum Request for Comments
 
