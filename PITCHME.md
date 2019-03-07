@@ -1,6 +1,8 @@
 
 ![Yarilabs](assets/yarilabs_logo_vH_signature_neg_transp.png)
-
+---
+* [twitter/yarilabs](https://twitter.com/yarilabs)
+* [instagram.com/yarilabs](https://instagram/yarilabs)
 ---
 ## Blockchain Workshop
 ### Bitcoin, Ethereum and Smart Contracts Programming
