@@ -2,6 +2,10 @@
     font-size: 1.5em;
 }
 
+.reveal {
+  font-size: 35px;
+}
+
 .reveal img, .reveal section img {
     border:0px; 
     background-color: transparent;
