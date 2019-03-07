@@ -1,2 +1,2 @@
-# blockchain-workshop-2
-The second workshop of blockchain @ YariLabs - "Lets make DApps"
+# blockchain-workshop-1
+First blockchain workshop @ Yari
