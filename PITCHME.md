@@ -4,6 +4,7 @@
 ## Follow us on social media
 * [twitter/yarilabs](https://twitter.com/yarilabs)
 * [instagram.com/yarilabs](https://instagram.com/yarilabs)
+* [medium/yarilabs](https://twitter.com/yarilabs)
 
 ---
 
