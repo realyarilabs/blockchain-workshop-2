@@ -18,10 +18,11 @@ emanuel@yarilabs.com
 
 
 ---
+@snap[h2-yellow]
+## Blockchain Workshop #1
+@snapend
 
-# Workshop #1
-#### Blockchain and Smart Contracts Programming
-
+#### Smart Contracts Programming
 ---
 
 ## Why this workshop ?
@@ -170,47 +171,12 @@ Smart contract flow of data
 ---
 
 ## What is an ERC20 token?
-+++
 
 ---?gist=emanuel/d98aa07ce3b21d08b45c108722e7f83d&&lang=Javascript&title=GIST: ERC20 Token 
 
 @[2-11](Balances definition)
 @[14-21](Transfer function)
 
-+++
-
-### ERC20 token
-ERC stands for Ethereum Request for Comments
-
-```javascript
-  contract MyToken {
-      /* This creates an array with all balances */
-      mapping (address => uint256) public balanceOf;
-
-      /* Initializes contract with initial supply tokens to the creator */
-      function MyToken(
-          uint256 initialSupply
-          ) {
-          // Give the creator all initial tokens
-          balanceOf[msg.sender] = initialSupply;
-      }
-```
-+++
-
-### ERC20 token (continuation)
-
-```javascript
-      /* Send coins */
-      function transfer(address _to, uint256 _value) {
-          // Check if the sender has enough
-          require(balanceOf[msg.sender] >= _value);
-          // Check for overflows
-          require(balanceOf[_to] + _value >= balanceOf[_to]); 
-          balanceOf[msg.sender] -= _value;
-          balanceOf[_to] += _value;
-      }
-  }
-```
 <p class="lowernote"> (from ethereum.org)</p>
 +++
 
