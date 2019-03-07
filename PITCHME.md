@@ -1,32 +1,36 @@
 
 ![Yarilabs](assets/yarilabs_logo_vH_signature_neg_transp.png)
+
 ---
-## Follow us on social media
+
+## Yarilabs on social media
 * [twitter/yarilabs](https://twitter.com/yarilabs)
 * [instagram.com/yarilabs](https://instagram.com/yarilabs)
-* [medium/yarilabs](https://twitter.com/yarilabs)
+* [medium/yarilabs](https://medium.com/yarilabs)
 
 ---
 
-Why this workshop ?
+### Emanuel Mota - @emota7
 
----
-## Blockchain Workshop
-### Bitcoin, Ethereum and Smart Contracts Programming
-
----
-
-## Emanuel Mota - @emota7
 Founder of Yari Labs
 
-emanuel@yarilabs.com
+emanuel@yarilabs.com 
 
-@yarilabs
+
+---
+
+# Workshop #1
+#### Blockchain and Smart Contracts Programming
+
+---
+
+## Why this workshop ?
 
 ---
 ## About the Talks 
 
 ### first talk
+
 * Blockchain Definitions 
 * Ethereum Overview
 * Smart Contracts 
@@ -36,7 +40,8 @@ emanuel@yarilabs.com
 ---
 ## About the Talks 
 
-### first talk
+### second talk
+
 * Solidity Programming Language
 * Questions 
 * Demos & Hands ON
@@ -52,6 +57,7 @@ emanuel@yarilabs.com
 * A blockchain is a globally shared, transactional database. 
 * everyone can read entries in the database 
 * changes can only happen via transactions accepted by all others
+
 +++
 
 ### Blockchain Overview
@@ -70,8 +76,10 @@ emanuel@yarilabs.com
 * Limited programmability 
 
 ---
+
 ### Ethereum 
 Many times called "The World Computer"!
+
 +++
 
 ### Ethereum 
@@ -108,27 +116,59 @@ Many times called "The World Computer"!
 +++
 
 ### Ethereum
-* Ethereum Blockchain
+  * Ethereum Blockchain
   * Contracts (code) 
   * Storage
   * Logs
   * Events
-
 +++
 
 ### Ethereum
-* Two kinds of accounts 
+  * Two kinds of accounts 
   * External Accounts (wallets controlled by humans)
   * Contract Accounts (controlled by code)
   * every account has a balance 
 +++
 
 ### Ethereum
-* Code execution costs GAS 
-* Transaction is a message sent from one account to another and can have a data
+  * Code execution costs GAS 
+  * Transaction is a message sent from one account to another and can have a data
   payload
 
 ---
+
+### Smart Contracts
+
+> "A smart contract is a computer program that directly controls digital assets
+> and which is run in such an environment that it can be trusted to faithfully execute."
+<div style="text-align: right"> (Vitalik Buterin) </div>
+
++++
+
+### Smart Contracts 
+
+Smart contract flow of data 
+![smart_contract_flow](assets/sc_flow.jpg)
++++
+
+![smart_contracts_applications](https://s3.eu-west-2.amazonaws.com/braga-blockchain/sc_application.png)
++++
+
+### Smart Contracts 
+* Contract = code (i.e. functions) + data (i.e. state) and resides on the blockchain 
+* EVM is the runtime for Smart Contracts on Ethereum
+* Accounts have a persistent memory area which is called storage
+* Contracts can neither read nor write to any storage apart from their own
++++
+
+### Smart Contracts 
+* Contracts can call other contracts 
+* 1024 max call stack depth
+* Support Events
+* Contracts can purge themselves from the blockchain (OPCODE selfdestruct)
+
+---
+
 ## What is an ERC20 token?
 +++
 
@@ -211,48 +251,31 @@ ERC stands for Ethereum Request for Comments
      event Approval(address indexed tokenOwner, address indexed spender, uint tokens);
  }
 ```
+
 ---
 
+## Questions ?
+
+### Emanuel Mota 
+### http://yarilabs.com  
+### @yarilabs
+
+* emanuel@yarilabs.com 
+* twitter: @emota7
+* github: emanuel 
+
+---
+
+# Smart Contracts 
+#### Solidity Programming Language
+
+---
 
 ## Helder Pinto - @helderjnpinto
 
 Developer at Yari Labs
 
 helder@yarilabs.com
-
----
-
-+++
-
-### Smart Contracts
-
-> "A smart contract is a computer program that directly controls digital assets
-> and which is run in such an environment that it can be trusted to faithfully execute."
-<div style="text-align: right"> (Vitalik Buterin) </div>
-
-+++
-
-### Smart Contracts 
-
-Smart contract flow of data 
-![smart_contract_flow](assets/sc_flow.jpg)
-+++
-
-![smart_contracts_applications](https://s3.eu-west-2.amazonaws.com/braga-blockchain/sc_application.png)
-+++
-
-### Smart Contracts 
-* Contract = code (i.e. functions) + data (i.e. state) and resides on the blockchain 
-* EVM is the runtime for Smart Contracts on Ethereum
-* Accounts have a persistent memory area which is called storage
-* Contracts can neither read nor write to any storage apart from their own
-+++
-
-### Smart Contracts 
-* Contracts can call other contracts 
-* 1024 max call stack depth
-* Support Events
-* Contracts can purge themselves from the blockchain (OPCODE selfdestruct)
 
 ---
 
