@@ -861,4 +861,10 @@ npm run dev
 
 +++
 
+## WORKSHOP - DApp PetShop 
+### Connect the Pet shop app to metamask
+
 ![s5](assets/inst/s5.png)
+
+++++
+
