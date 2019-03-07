@@ -786,7 +786,79 @@ Browser wallet:
 ---
 
 ---
-## Hands ON 
+## WORKSHOP - DApp PetShop 
 * Lets make DApps!!!
 * Clone this repo: https://github.com/realyarilabs/blockchain-workshop-2
 * Telegram - https://t.me/bragablockchain
+
++++
+
+## WORKSHOP - DApp PetShop 
+Install dev dependencies
+
+- [Docs | Solidity Cheat Sheet](configure_env/Docs.md)
+- [Install dependencies](configure_env/Install dependencies.md)
+    - Node & NPM
+    - Ganache app (Test net)
+    - Truffle
+    - Metamask
+
++++
+
+
+## WORKSHOP - DApp PetShop 
+### Copy MNEMONIC
+
+![s1](assets/inst/s1.png)
+
++++
+## WORKSHOP - DApp PetShop 
+### Import on Metamask
+
+![s2](assets/inst/s2.png)
+
++++
+
+## WORKSHOP - DApp PetShop 
+### Select the blockchain network
+
+![s3](assets/inst/s3.png)
+
++++
+
+
+## WORKSHOP - DApp PetShop 
+### cd pet shop dapp folder
+
+![s4](assets/inst/s4.png)
+
++++
+
+## WORKSHOP - DApp PetShop 
+### Compile and Migrate
+
+```bash
+> truffle compile
+
+> truffle migrate
+
+```
+
++++
+
+
+## WORKSHOP - DApp PetShop 
+### Run dev server
+
+Serves the front-end "./src" on
+http://localhost:3000
+
+```bash
+
+npm run dev
+
+```
+
++++
+
+![s5](assets/inst/s5.png)
