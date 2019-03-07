@@ -3,7 +3,12 @@
 ---
 ## Follow us on social media
 * [twitter/yarilabs](https://twitter.com/yarilabs)
-* [instagram.com/yarilabs](https://instagram/yarilabs)
+* [instagram.com/yarilabs](https://instagram.com/yarilabs)
+
+---
+
+Why this workshop ?
+
 ---
 ## Blockchain Workshop
 ### Bitcoin, Ethereum and Smart Contracts Programming
@@ -18,15 +23,20 @@ emanuel@yarilabs.com
 @yarilabs
 
 ---
-## About the Talk 
+## About the Talks 
 
-* Intro 
+### first talk
 * Blockchain Definitions 
- Ethereum Overview
+* Ethereum Overview
 * Smart Contracts 
-* Solidity Programming Language
 * ERC20 tokens
-* Security Concerns
+* Questions 
+
+---
+## About the Talks 
+
+### first talk
+* Solidity Programming Language
 * Questions 
 * Demos & Hands ON
 
@@ -34,18 +44,8 @@ emanuel@yarilabs.com
 ### Intro / Get to know the audience !
 ---
 
-## Wallets setup for the hands on ?
-#### Telegram - https://t.me/bragablockchain
-
-* [How to setup Ethereum Wallet](https://gist.github.com/emanuel/6d5dc064b2f26e1b397191854ed04d89)
-* If help is need ask *Yari Labs* coaches 
-* [www.ethereum.org](www.ethereum.org)
-* [metamask.io](https://metamask.io)
-
----
-
 ## Blockchain Overview
-+++*
++++
 
 ### Blockchain Overview
 * A blockchain is a globally shared, transactional database. 
@@ -96,7 +96,7 @@ Many times called "The World Computer"!
 +++
 
 ### Ethereum
-* 5 ethers are created with each new block (mined every 15-17 seconds)
+* 2 ethers are created with each new block (mined every 15-17 seconds)
 +++
 
 ### Ethereum
@@ -127,63 +127,6 @@ Many times called "The World Computer"!
 * Transaction is a message sent from one account to another and can have a data
   payload
 
----
-
-## Security Concerns
-+++
-
-* Smart Contracts are a new execution paradigm. Unstoppable applications. 'Code is law'
-* The entire stack was developed from scratch (VM, compilers, consensus layer, etc.)
-* Direct Financial incentives for Attackers
-
-+++
-
-
-### Security Concerns
-* 18th June 2016
-![The DAO hack](https://s3.eu-west-2.amazonaws.com/braga-blockchain/hack_1.png) 
-
-* 19th July 2017
-![Parity Wallet hack](https://s3.eu-west-2.amazonaws.com/braga-blockchain/hack_2.png) 
-
-+++
-### Security Concerns
-
-* 24 April 2018
-![BufferOverflow token hack](https://s3.eu-west-2.amazonaws.com/braga-blockchain/hack_4.png) 
-
-* 26 April 2018
-![MEW DNS hack](https://s3.eu-west-2.amazonaws.com/braga-blockchain/hack_3.png) 
-+++
-### Security Concerns
-
-* Recursive Calls: [Understanding the DAO](https://www.coindesk.com/understanding-dao-hack-journalists)
-* Technical Explanation: https://vessenes.com/more-ethereum-attacks-race-to-empty-is-the-real-deal/
-* App security: [Parity Multisig Exploit](https://ethereum.stackexchange.com/questions/21618/what-is-the-exploit-behind-paritys-multisig-wallet-from-2017-07-19?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
-* DNS: [DNS Hijacking](https://peckshield.com/2018/04/26/mew-dns-hijacking)
-* OVERFLOW: [proxy overflow](https://peckshield.com/2018/04/25/proxyOverflow)
-* OVERFLOW: [batch overflow](https://peckshield.com/2018/04/22/batchOverflow)
----
-
----
-## Some Usefull Links
-+++
-
-### Some Usefull Links
-* Ethereum website https://www.ethereum.org/
-* Online compiler https://remix.ethereum.org/
-* Online tools https://rinkeby.etherscan.io 
-* https://etherscan.io (block explorer, tx submit)
-* EthFiddle https://ethfiddle.com/
-+++
-
-### Some Usefull Links
-* https://etherchain.org/
-* http://infura.io (so you don’t have to run your own node/s)
-* Truffle  https://github.com/ConsenSys/truffle. 
-* Embark https://github.com/iurimatias/embark-framework
-* Open Zeppelin https://openzeppelin.org/
-* https://metamask.io/
 ---
 ## What is an ERC20 token?
 +++
@@ -797,6 +740,28 @@ Browser wallet:
 
 ---
 
+## Some Usefull Links
+
++++
+
+### Some Usefull Links
+* Ethereum website https://www.ethereum.org/
+* Online compiler https://remix.ethereum.org/
+* Online tools https://rinkeby.etherscan.io 
+* https://etherscan.io (block explorer, tx submit)
+* EthFiddle https://ethfiddle.com/
++++
+
+### Some Usefull Links
+* https://etherchain.org/
+* http://infura.io (so you don’t have to run your own node/s)
+* Truffle  https://github.com/ConsenSys/truffle. 
+* Embark https://github.com/iurimatias/embark-framework
+* Open Zeppelin https://openzeppelin.org/
+* https://metamask.io/
+
+---
+
 ## Questions ?
 
 ### Helder Pinto 
@@ -812,7 +777,6 @@ Browser wallet:
 
 ![coffe](./assets/coffee.png)
 
----
 
 ---
 ## Hands ON 
