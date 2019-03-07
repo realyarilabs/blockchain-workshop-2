@@ -172,11 +172,11 @@ Smart contract flow of data
 ## What is an ERC20 token?
 +++
 
----?gist=onetapbeyond/494e0fecaf0d6a2aa2acadfb8eb9d6e8&lang=Scala&title=GIST: Scala Snippet
+---?gist=emanuel/d98aa07ce3b21d08b45c108722e7f83d&&lang=Javascript&title=GIST: ERC20 Token 
 
-@[25-29](Init Spark cluster data source)
-@[41-53](Build RDD[AWSTask] from source)
-@[57-62](Delegate RDD[AWSTask] to AWS Lambda)
+@[2-11](Balances definition)
+@[14-21](Transfer function)
+
 +++
 
 ### ERC20 token
