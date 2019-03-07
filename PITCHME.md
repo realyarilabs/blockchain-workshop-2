@@ -263,16 +263,6 @@ ERC stands for Ethereum Request for Comments
 ---
 
 
-## Helder Pinto - @helderjnpinto
-
-Developer at Yari Labs
-
-helder@yarilabs.com
-
----
-
-+++
-
 ### Smart Contracts
 
 > "A smart contract is a computer program that directly controls digital assets
@@ -305,8 +295,19 @@ Smart contract flow of data
 
 ---
 
-## Ethereum high level languages
+## Helder Pinto - @helderjnpinto
 
+Developer at Yari Labs
+
+helder@yarilabs.com
+
+---
+
+
+## Ethereum high level languages
++++
+
+## Ethereum high level languages
 
 * **Solidity**: is a language **similar to JavaScript** which allows you to develop contracts and compile to EVM bytecode. It is currently the flagship language of Ethereum and the most popular.
 
@@ -314,9 +315,7 @@ Smart contract flow of data
 
 * **LLL**: Lisp Like Language (LLL) is a low level language similar to Assembly. It is meant to be very simple and minimalistic; essentially just a tiny wrapper over coding in EVM directly.
 
-
-  [source](https://solidity.readthedocs.io/)
-
+[source](https://solidity.readthedocs.io/)
 ---
 
 ## Solidity Programming Language
@@ -516,7 +515,7 @@ More about functions
 +++
 
 ### Solidity 
-Function Modifiers 
+Function Returns 
 
 ```javascript
   function sayHello() public view returns (string) {
@@ -533,8 +532,6 @@ Function Modifiers
   }
   // when a function returns multiple values we need to parallel assign 
   (x1, y1) = increment(1,2);
-
-  
 
 ```
 +++
@@ -626,63 +623,39 @@ now; // current time (approximately) - uses Unix time
 ## Important Design Notes / style guide - Class methods order
 
 ```javascript
-
 pragma solidity >=0.4.0 <0.6.0;
 
 contract A {
     constructor() public {
-        // ...
     }
 
     function() external {
-        // ...
     }
-
     // External functions
-    // ...
-
     // External functions that are view
-    // ...
-
     // External functions that are pure
-    // ...
-
     // Public functions
-    // ...
-
     // Internal functions
-    // ...
-
     // Private functions
-    // ...
 }
 
 ```
 
 ## Important Design Notes / style guide - Functions signature order
 
+The visibility **modifier** for a function should come before any custom modifiers.
 ```javascript
 
-  pragma solidity >=0.4.16 <0.6.0;
-
-  contract Simple {
-      function arithmetic(uint _a, uint _b)
-          public
-          pure
-          returns (uint o_sum, uint o_product)
-      {
-          o_sum = _a + _b;
-          o_product = _a * _b;
-      }
-
-      // The visibility **modifier** for a function should come before any custom modifiers.
+  contract Suicide {
+    // ... modifier onlyowner ...
     function kill() public onlyowner {
       selfdestruct(owner);
     }
   }
 
 ```
-+++
+
+---
 
 ## Interact with Smart Contracts
 Basic design
@@ -690,7 +663,6 @@ Basic design
 - The Contract Application Binary Interface (ABI) is the standard way to interact with contracts in the Ethereum ecosystem, **both from outside the blockchain** and for **contract-to-contract** interaction. 
 
 Data is encoded according to its type, as described in this specification. The encoding is not self describing and thus requires a schema in order to decode.
-
 
 +++
 
@@ -709,6 +681,8 @@ contract Foo {
 }
 
 ```
+## Interact with Smart Contracts
++++ 
 
 The Method ID. This is derived as the first 4 bytes of the "sha3 ou Keccak256" Keccak hash of the ASCII form of the signature baz(uint32,bool)
 
@@ -741,7 +715,7 @@ contract Test {
 ## Interact with Smart Contracts
 would result in the JSON:
 
-```json
+```JSON
 [{
 "type":"event",
 "inputs": [{"name":"a","type":"uint256","indexed":true},{"name":"b","type":"bytes32","indexed":false}],
@@ -758,8 +732,12 @@ would result in the JSON:
 }]
 
 ```
-
 +++
+
+## Interact with Smart Contracts
+Web3 
++++
+
 ## Interact with Smart Contracts
 Web3 
 
