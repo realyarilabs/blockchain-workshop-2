@@ -238,8 +238,10 @@ Smart contract flow of data
 * github: emanuel 
 
 ---
+@snap[h2-yellow]
+## Smart Contracts 
+@snapend
 
-# Smart Contracts 
 #### Solidity Programming Language
 
 ---
