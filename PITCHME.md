@@ -1,3 +1,7 @@
+
+![Yarilabs](assets/yarilabs_logo_vH_signature_neg_transp.png)
+
+---
 ## Blockchain Workshop
 ### Bitcoin, Ethereum and Smart Contracts Programming
 
@@ -15,7 +19,7 @@ emanuel@yarilabs.com
 
 * Intro 
 * Blockchain Definitions 
-* Ethereum Overview
+ Ethereum Overview
 * Smart Contracts 
 * Solidity Programming Language
 * ERC20 tokens
@@ -38,7 +42,7 @@ emanuel@yarilabs.com
 ---
 
 ## Blockchain Overview
-+++
++++*
 
 ### Blockchain Overview
 * A blockchain is a globally shared, transactional database. 
