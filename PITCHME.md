@@ -338,6 +338,7 @@ The address type comes in two flavours, which are largely identical:
 - `address`: Holds a 20 byte value (size of an Ethereum address).
 - `address payable`: Same as address, but with the additional members transfer and send.
 
++++
 
 Type conversions:
 >  Implicit conversions from address payable to address are allowed, whereas conversions from address to address payable are not possible (the only way to perform such a conversion is by using an intermediate conversion to uint160).
@@ -415,7 +416,7 @@ function (<parameter types>) {internal|external} [pure|view|payable] [returns (<
 
 ```
 
-++++
++++
 
 ### Solidity 
 Function declarations 
@@ -453,6 +454,11 @@ Visibility and Getters
 * **external** - External functions are part of the contract interface, which means they can be called from other contracts and via transactions. An external function f cannot be called internally (i.e. f() does not work, but this.f() works). External functions are sometimes more efficient when they receive large arrays of data.
 
 * **public** - Public functions are part of the contract interface and can be either called internally or via messages. For public state variables, an automatic getter function (see below) is generated.
+
++++
+
+### Solidity 
+Visibility and Getters 
 
 * **internal** - Those functions and state variables can only be accessed internally (i.e. from within the current contract or contracts deriving from it), without using this.
 
