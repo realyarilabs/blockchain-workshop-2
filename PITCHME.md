@@ -462,7 +462,7 @@ Visibility and Getters
 
 * **internal** - Those functions and state variables can only be accessed internally (i.e. from within the current contract or contracts deriving from it), without using this.
 
-* **external** - Private functions and state variables are only visible for the contract they are defined in and not in derived contracts.
+* **private** - Private functions and state variables are only visible for the contract they are defined in and not in derived contracts.
 
 +++
 
@@ -633,6 +633,7 @@ contract A {
 }
 
 ```
++++
 
 ## Important Design Notes / style guide - Functions signature order
 
@@ -674,8 +675,10 @@ contract Foo {
 }
 
 ```
-## Interact with Smart Contracts
+
 +++ 
+
+## Interact with Smart Contracts
 
 The Method ID. This is derived as the first 4 bytes of the "sha3 ou Keccak256" Keccak hash of the ASCII form of the signature baz(uint32,bool)
 
