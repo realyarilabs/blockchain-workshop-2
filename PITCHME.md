@@ -194,7 +194,6 @@ Smart contract flow of data
   <li> approveAndCall(spender, value, extraData)</li>
   <li> burn(value)</li>
   <li> burnFrom(from, value)</li>
-  <li>  </li>
   <li> plus trigger a set of events </li>
 </ul>
 <p class="lowernote">
