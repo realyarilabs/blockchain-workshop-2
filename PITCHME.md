@@ -456,11 +456,17 @@ Visibility and Getters
 * **internal** - Those functions and state variables can only be accessed internally (i.e. from within the current contract or contracts deriving from it), without using this.
 +++
 
+
 ### Solidity 
 Visibility and Getters 
 
 * **public** - Public functions are part of the contract interface and can be either called internally or via messages. For public state variables, an automatic getter function (see below) is generated.
++++
 
+### Solidity 
+Visibility and Getters 
+
+* **private** - Private functions and state variables are only visible for the contract they are defined in and not in derived contracts.
 +++
 
 ### Solidity 
@@ -629,6 +635,7 @@ contract A {
 }
 
 ```
++++
 
 
 +++
@@ -673,6 +680,7 @@ contract Foo {
 }
 
 ```
++++
 
 ## Interact with Smart Contracts
 
@@ -738,6 +746,7 @@ You need to run a local or remote Ethereum node to use this library.
 [Web3.js](https://github.com/ethereum/web3.js)
 
 +++
+
 ## Interact with Smart Contracts
 
 Similar libraries in other languages
