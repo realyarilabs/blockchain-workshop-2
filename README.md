@@ -1,2 +1,2 @@
-# blockchain-workshop-1
-First blockchain workshop @ Yari
+# blockchain-workshop-2
+Second blockchain workshop @ Yari
