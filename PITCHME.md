@@ -899,7 +899,7 @@ npm run dev
 
 ![s5](assets/inst/s5.png)
 
-++++
++++
 
 ## WORKSHOP - DApp PetShop 
 ### Lets create an contract
@@ -910,7 +910,7 @@ pet_shop_dapp
     |
     |-> Adoption.sol  
 
-++++
++++
 
 
 ## WORKSHOP - DApp PetShop 
@@ -922,7 +922,7 @@ pet_shop_dapp
   ...
 ```
 
-++++
++++
 
 
 ## WORKSHOP - DApp PetShop 
@@ -936,7 +936,7 @@ pet_shop_dapp
   }
 ```
 
-++++
++++
 ## WORKSHOP - DApp PetShop 
 ### Contract - Adoption.sol  
 
@@ -950,7 +950,7 @@ pet_shop_dapp
   }
 ```
 
-++++
++++
 
 ## WORKSHOP - DApp PetShop 
 ### Contract - Adoption.sol  
@@ -963,7 +963,7 @@ pet_shop_dapp
   }
 ```
 
-++++
++++
 
 ## WORKSHOP - DApp PetShop 
 ### Contract - Adoption.sol 
@@ -987,7 +987,7 @@ Create an function for adopting a pet!
   }
 
 ```
-++++
++++
 
 
 ## WORKSHOP - DApp PetShop 
@@ -1005,7 +1005,7 @@ Create an function for adopting a pet!
   ...
 ```
 
-++++
++++
 
 ## WORKSHOP - DApp PetShop 
 ### Contract - Adoption.sol  
@@ -1022,7 +1022,7 @@ At the end we need an method for `getAdopters`:
   ...
 ```
 
-++++
++++
 
 
 ## WORKSHOP - DApp PetShop 
@@ -1042,7 +1042,7 @@ return: array of adopters
     }
   ...
 ```
-++++
++++
 
 
 ## WORKSHOP - DApp PetShop 
@@ -1056,7 +1056,7 @@ truffle compile
 ![lets compile](https://media.giphy.com/media/1qRjAceZg4OPu/giphy.gif)
 
 
-++++
++++
 
 
 ## WORKSHOP - DApp PetShop 
@@ -1074,7 +1074,7 @@ var Adoption = artifacts.require("Adoption");
 
 ``` 
 
-++++
++++
 
 ## WORKSHOP - DApp PetShop 
 ### Run migrations
@@ -1083,7 +1083,7 @@ var Adoption = artifacts.require("Adoption");
 truffle migrate
 ``` 
 
-++++
++++
 
 ## WORKSHOP - DApp PetShop 
 ### Jump to `src` folder
@@ -1092,6 +1092,6 @@ This is or frontend of Adopters smart contract.
 
 - app.js
 
-++++
++++
 
 
