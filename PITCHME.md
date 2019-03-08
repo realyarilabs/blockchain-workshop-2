@@ -1,40 +1,54 @@
-## Blockchain Workshop
-### Bitcoin, Ethereum and Smart Contracts Programming
+
+![Yarilabs](assets/yarilabs_logo_vH_signature_neg_transp.png)
 
 ---
 
-## Emanuel Mota - @emota7
+## Yarilabs on social media
+* [twitter/yarilabs](https://twitter.com/yarilabs)
+* [instagram.com/yarilabs](https://instagram.com/yarilabs)
+* [medium/yarilabs](https://medium.com/yarilabs)
+
+---
+
+### Emanuel Mota - @emota7
+
 Founder of Yari Labs
 
-emanuel@yarilabs.com
+emanuel@yarilabs.com 
 
-@yarilabs
 
 ---
-## About the Talk 
+@snap[h2-yellow]
+## Blockchain Workshop #1
+@snapend
 
-* Intro 
+#### Smart Contracts Programming
+---
+
+## Why this workshop ?
+
+---
+## About the Talks 
+
+### first talk
+
 * Blockchain Definitions 
 * Ethereum Overview
 * Smart Contracts 
-* Solidity Programming Language
 * ERC20 tokens
-* Security Concerns
+* Questions 
+
+---
+## About the Talks 
+
+### second talk
+
+* Solidity Programming Language
 * Questions 
 * Demos & Hands ON
 
 ---
 ### Intro / Get to know the audience !
----
-
-## Wallets setup for the hands on ?
-#### Telegram - https://t.me/bragablockchain
-
-* [How to setup Ethereum Wallet](https://gist.github.com/emanuel/6d5dc064b2f26e1b397191854ed04d89)
-* If help is need ask *Yari Labs* coaches 
-* [www.ethereum.org](www.ethereum.org)
-* [metamask.io](https://metamask.io)
-
 ---
 
 ## Blockchain Overview
@@ -44,6 +58,7 @@ emanuel@yarilabs.com
 * A blockchain is a globally shared, transactional database. 
 * everyone can read entries in the database 
 * changes can only happen via transactions accepted by all others
+
 +++
 
 ### Blockchain Overview
@@ -62,8 +77,10 @@ emanuel@yarilabs.com
 * Limited programmability 
 
 ---
+
 ### Ethereum 
 Many times called "The World Computer"!
+
 +++
 
 ### Ethereum 
@@ -89,7 +106,7 @@ Many times called "The World Computer"!
 +++
 
 ### Ethereum
-* 5 ethers are created with each new block (mined every 15-17 seconds)
+* 2 ethers are created with each new block (mined every 15-17 seconds)
 +++
 
 ### Ethereum
@@ -100,119 +117,66 @@ Many times called "The World Computer"!
 +++
 
 ### Ethereum
-* Ethereum Blockchain
+  * Ethereum Blockchain
   * Contracts (code) 
   * Storage
   * Logs
   * Events
-
 +++
 
 ### Ethereum
-* Two kinds of accounts 
+  * Two kinds of accounts 
   * External Accounts (wallets controlled by humans)
   * Contract Accounts (controlled by code)
   * every account has a balance 
 +++
 
 ### Ethereum
-* Code execution costs GAS 
-* Transaction is a message sent from one account to another and can have a data
+  * Code execution costs GAS 
+  * Transaction is a message sent from one account to another and can have a data
   payload
 
 ---
 
-## Security Concerns
-+++
+### Smart Contracts
 
-* Smart Contracts are a new execution paradigm. Unstoppable applications. 'Code is law'
-* The entire stack was developed from scratch (VM, compilers, consensus layer, etc.)
-* Direct Financial incentives for Attackers
-
-+++
-
-
-### Security Concerns
-* 18th June 2016
-![The DAO hack](https://s3.eu-west-2.amazonaws.com/braga-blockchain/hack_1.png) 
-
-* 19th July 2017
-![Parity Wallet hack](https://s3.eu-west-2.amazonaws.com/braga-blockchain/hack_2.png) 
+> "A smart contract is a computer program that directly controls digital assets
+> and which is run in such an environment that it can be trusted to faithfully execute."
+<div style="text-align: right"> (Vitalik Buterin) </div>
 
 +++
-### Security Concerns
 
-* 24 April 2018
-![BufferOverflow token hack](https://s3.eu-west-2.amazonaws.com/braga-blockchain/hack_4.png) 
+### Smart Contracts 
 
-* 26 April 2018
-![MEW DNS hack](https://s3.eu-west-2.amazonaws.com/braga-blockchain/hack_3.png) 
+Smart contract flow of data 
+![smart_contract_flow](assets/sc_flow.jpg)
 +++
-### Security Concerns
 
-* Recursive Calls: [Understanding the DAO](https://www.coindesk.com/understanding-dao-hack-journalists)
-* Technical Explanation: https://vessenes.com/more-ethereum-attacks-race-to-empty-is-the-real-deal/
-* App security: [Parity Multisig Exploit](https://ethereum.stackexchange.com/questions/21618/what-is-the-exploit-behind-paritys-multisig-wallet-from-2017-07-19?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
-* DNS: [DNS Hijacking](https://peckshield.com/2018/04/26/mew-dns-hijacking)
-* OVERFLOW: [proxy overflow](https://peckshield.com/2018/04/25/proxyOverflow)
-* OVERFLOW: [batch overflow](https://peckshield.com/2018/04/22/batchOverflow)
+![smart_contracts_applications](https://s3.eu-west-2.amazonaws.com/braga-blockchain/sc_application.png)
++++
+
+### Smart Contracts 
+* Contract = code (i.e. functions) + data (i.e. state) and resides on the blockchain 
+* EVM is the runtime for Smart Contracts on Ethereum
+* Accounts have a persistent memory area which is called storage
+* Contracts can neither read nor write to any storage apart from their own
++++
+
+### Smart Contracts 
+* Contracts can call other contracts 
+* 1024 max call stack depth
+* Support Events
+* Contracts can purge themselves from the blockchain (OPCODE selfdestruct)
+
 ---
 
----
-## Some Usefull Links
-+++
-
-### Some Usefull Links
-* Ethereum website https://www.ethereum.org/
-* Online compiler https://remix.ethereum.org/
-* Online tools https://rinkeby.etherscan.io 
-* https://etherscan.io (block explorer, tx submit)
-* EthFiddle https://ethfiddle.com/
-+++
-
-### Some Usefull Links
-* https://etherchain.org/
-* http://infura.io (so you don’t have to run your own node/s)
-* Truffle  https://github.com/ConsenSys/truffle. 
-* Embark https://github.com/iurimatias/embark-framework
-* Open Zeppelin https://openzeppelin.org/
-* https://metamask.io/
----
 ## What is an ERC20 token?
-+++
 
-### ERC20 token
-ERC stands for Ethereum Request for Comments
+---?gist=emanuel/d98aa07ce3b21d08b45c108722e7f83d&&lang=Javascript&title=GIST: ERC20 Token 
 
-```javascript
-  contract MyToken {
-      /* This creates an array with all balances */
-      mapping (address => uint256) public balanceOf;
+@[2-11](Balances definition)
+@[14-21](Transfer function)
 
-      /* Initializes contract with initial supply tokens to the creator */
-      function MyToken(
-          uint256 initialSupply
-          ) {
-          // Give the creator all initial tokens
-          balanceOf[msg.sender] = initialSupply;
-      }
-```
-+++
-
-### ERC20 token (continuation)
-
-```javascript
-      /* Send coins */
-      function transfer(address _to, uint256 _value) {
-          // Check if the sender has enough
-          require(balanceOf[msg.sender] >= _value);
-          // Check for overflows
-          require(balanceOf[_to] + _value >= balanceOf[_to]); 
-          balanceOf[msg.sender] -= _value;
-          balanceOf[_to] += _value;
-      }
-  }
-```
 <p class="lowernote"> (from ethereum.org)</p>
 +++
 
@@ -260,38 +224,31 @@ ERC stands for Ethereum Request for Comments
      event Approval(address indexed tokenOwner, address indexed spender, uint tokens);
  }
 ```
+
+## Questions ?
+
+### Emanuel Mota 
+### http://yarilabs.com  
+### @yarilabs
+
+* emanuel@yarilabs.com 
+* twitter: @emota7
+* github: emanuel 
+
+---
+@snap[h2-yellow]
+## Smart Contracts 
+@snapend
+
+#### Solidity Programming Language
+
 ---
 
+## Helder Pinto - @helderjnpinto
 
-### Smart Contracts
+Developer at Yari Labs
 
-> "A smart contract is a computer program that directly controls digital assets
-> and which is run in such an environment that it can be trusted to faithfully execute."
-<div style="text-align: right"> (Vitalik Buterin) </div>
-
-+++
-
-### Smart Contracts 
-
-Smart contract flow of data 
-![smart_contract_flow](assets/sc_flow.jpg)
-+++
-
-![smart_contracts_applications](https://s3.eu-west-2.amazonaws.com/braga-blockchain/sc_application.png)
-+++
-
-### Smart Contracts 
-* Contract = code (i.e. functions) + data (i.e. state) and resides on the blockchain 
-* EVM is the runtime for Smart Contracts on Ethereum
-* Accounts have a persistent memory area which is called storage
-* Contracts can neither read nor write to any storage apart from their own
-+++
-
-### Smart Contracts 
-* Contracts can call other contracts 
-* 1024 max call stack depth
-* Support Events
-* Contracts can purge themselves from the blockchain (OPCODE selfdestruct)
+helder@yarilabs.com
 
 ---
 
@@ -795,6 +752,28 @@ Browser wallet:
 
 ---
 
+## Some Usefull Links
+
++++
+
+### Some Usefull Links
+* Ethereum website https://www.ethereum.org/
+* Online compiler https://remix.ethereum.org/
+* Online tools https://rinkeby.etherscan.io 
+* https://etherscan.io (block explorer, tx submit)
+* EthFiddle https://ethfiddle.com/
++++
+
+### Some Usefull Links
+* https://etherchain.org/
+* http://infura.io (so you don’t have to run your own node/s)
+* Truffle  https://github.com/ConsenSys/truffle. 
+* Embark https://github.com/iurimatias/embark-framework
+* Open Zeppelin https://openzeppelin.org/
+* https://metamask.io/
+
+---
+
 ## Questions ?
 
 ### Helder Pinto 
@@ -810,7 +789,6 @@ Browser wallet:
 
 ![coffe](./assets/coffee.png)
 
----
 
 ---
 ## WORKSHOP - DApp PetShop 
