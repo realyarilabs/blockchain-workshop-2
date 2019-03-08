@@ -225,8 +225,6 @@ Smart contract flow of data
  }
 ```
 
----
-
 ## Questions ?
 
 ---
@@ -255,8 +253,19 @@ helder@yarilabs.com
 
 ---
 
-## Ethereum high level languages
+## Helder Pinto - @helderjnpinto
 
+Developer at Yari Labs
+
+helder@yarilabs.com
+
+---
+
+
+## Ethereum high level languages
++++
+
+## Ethereum high level languages
 
 * **Solidity**: is a language **similar to JavaScript** which allows you to develop contracts and compile to EVM bytecode. It is currently the flagship language of Ethereum and the most popular.
 
@@ -264,9 +273,7 @@ helder@yarilabs.com
 
 * **LLL**: Lisp Like Language (LLL) is a low level language similar to Assembly. It is meant to be very simple and minimalistic; essentially just a tiny wrapper over coding in EVM directly.
 
-
-  [source](https://solidity.readthedocs.io/)
-
+[source](https://solidity.readthedocs.io/)
 ---
 
 ## Solidity Programming Language
@@ -466,7 +473,7 @@ More about functions
 +++
 
 ### Solidity 
-Function Modifiers 
+Function Returns 
 
 ```javascript
   function sayHello() public view returns (string) {
@@ -483,8 +490,6 @@ Function Modifiers
   }
   // when a function returns multiple values we need to parallel assign 
   (x1, y1) = increment(1,2);
-
-  
 
 ```
 +++
@@ -555,12 +560,38 @@ contract SimpleAuction {
 +++
 
 ### Solidity 
+Error Handling
+
+- ** assert(bool condition) **: 
+ throws if the condition is not met - to be **used for internal errors**.
+
++++
+
+### Solidity 
+Error Handling
+
+- ** require(bool condition) **:
+ throws if the condition is not met - to be used for errors in **inputs**.
+
++++
+
+### Solidity 
+Error Handling
+
+- ** revert() ** : 
+  abort execution and revert state changes
+
++++
+
+
+### Solidity 
 Important global variables 
 
 ```javascript
   this; // address of contract
   this.balance; // often used at end of contract life to transfer balance 
 ```
+
 ```javascript
   // ** msg - Current message received by the contract ** **
   msg.sender; // address of sender
@@ -568,6 +599,7 @@ Important global variables
   msg.data; // bytes, complete call data
   msg.gas; // remaining gas
 ```
+
 ```javascript
 now; // current time (approximately) - uses Unix time
 ```
@@ -576,63 +608,39 @@ now; // current time (approximately) - uses Unix time
 ## Important Design Notes / style guide - Class methods order
 
 ```javascript
-
 pragma solidity >=0.4.0 <0.6.0;
 
 contract A {
     constructor() public {
-        // ...
     }
 
     function() external {
-        // ...
     }
-
     // External functions
-    // ...
-
     // External functions that are view
-    // ...
-
     // External functions that are pure
-    // ...
-
     // Public functions
-    // ...
-
     // Internal functions
-    // ...
-
     // Private functions
-    // ...
 }
 
 ```
 
 ## Important Design Notes / style guide - Functions signature order
 
+The visibility **modifier** for a function should come before any custom modifiers.
 ```javascript
 
-  pragma solidity >=0.4.16 <0.6.0;
-
-  contract Simple {
-      function arithmetic(uint _a, uint _b)
-          public
-          pure
-          returns (uint o_sum, uint o_product)
-      {
-          o_sum = _a + _b;
-          o_product = _a * _b;
-      }
-
-      // The visibility **modifier** for a function should come before any custom modifiers.
+  contract Suicide {
+    // ... modifier onlyowner ...
     function kill() public onlyowner {
       selfdestruct(owner);
     }
   }
 
 ```
-+++
+
+---
 
 ## Interact with Smart Contracts
 Basic design
@@ -640,7 +648,6 @@ Basic design
 - The Contract Application Binary Interface (ABI) is the standard way to interact with contracts in the Ethereum ecosystem, **both from outside the blockchain** and for **contract-to-contract** interaction. 
 
 Data is encoded according to its type, as described in this specification. The encoding is not self describing and thus requires a schema in order to decode.
-
 
 +++
 
@@ -659,6 +666,8 @@ contract Foo {
 }
 
 ```
+## Interact with Smart Contracts
++++ 
 
 The Method ID. This is derived as the first 4 bytes of the "sha3 ou Keccak256" Keccak hash of the ASCII form of the signature baz(uint32,bool)
 
@@ -691,7 +700,7 @@ contract Test {
 ## Interact with Smart Contracts
 would result in the JSON:
 
-```json
+```JSON
 [{
 "type":"event",
 "inputs": [{"name":"a","type":"uint256","indexed":true},{"name":"b","type":"bytes32","indexed":false}],
@@ -708,8 +717,12 @@ would result in the JSON:
 }]
 
 ```
-
 +++
+
+## Interact with Smart Contracts
+Web3 
++++
+
 ## Interact with Smart Contracts
 Web3 
 
@@ -779,7 +792,279 @@ Browser wallet:
 
 
 ---
-## Hands ON 
+## WORKSHOP - DApp PetShop 
 * Lets make DApps!!!
 * Clone this repo: https://github.com/realyarilabs/blockchain-workshop-2
 * Telegram - https://t.me/bragablockchain
+
++++
+
+## WORKSHOP - DApp PetShop 
+Install dev dependencies
+
+- [Docs | Solidity Cheat Sheet](configure_env/Docs.md)
+- [Install dependencies](configure_env/Install dependencies.md)
+    - Node & NPM
+    - Ganache app (Test net)Error Handling
+    - Truffle
+    - Metamask
+
++++
+
+
+## WORKSHOP - DApp PetShop 
+### Copy MNEMONIC
+
+![s1](assets/inst/s1.png)
+
++++
+## WORKSHOP - DApp PetShop 
+### Import on Metamask
+
+![s2](assets/inst/s2.png)
+
++++
+
+## WORKSHOP - DApp PetShop 
+### Select the blockchain network
+
+![s3](assets/inst/s3.png)
+
++++
+
+
+## WORKSHOP - DApp PetShop 
+### cd pet shop dapp folder
+
+![s4](assets/inst/s4.png)
+
++++
+
+## WORKSHOP - DApp PetShop 
+### Compile and Migrate
+
+```bash
+> truffle compile
+
+> truffle migrate
+
+```
+
++++
+
+
+## WORKSHOP - DApp PetShop 
+### Run dev server
+
+Serves the front-end "./src" on
+http://localhost:3000
+
+```bash
+
+npm run dev
+
+```
+
++++
+
+## WORKSHOP - DApp PetShop 
+### Connect the Pet shop app to metamask
+
+![s5](assets/inst/s5.png)
+
+++++
+
+## WORKSHOP - DApp PetShop 
+### Lets create an contract
+
+pet_shop_dapp
+|
+|-> contracts
+    |
+    |-> Adoption.sol  
+
+++++
+
+
+## WORKSHOP - DApp PetShop 
+### Contract - Adoption.sol  
+
+```javascript
+  pragma solidity ^0.5.0;
+
+  ...
+```
+
+++++
+
+
+## WORKSHOP - DApp PetShop 
+### Contract - Adoption.sol  
+
+```javascript
+  pragma solidity ^0.5.0;
+
+  contract Adoption {
+
+  }
+```
+
+++++
+## WORKSHOP - DApp PetShop 
+### Contract - Adoption.sol  
+
+- Create array of `address` type `adopters` with `16` size and make it `public`
+
+```javascript
+  pragma solidity ^0.5.0;
+
+  contract Adoption {
+    <- here ->
+  }
+```
+
+++++
+
+## WORKSHOP - DApp PetShop 
+### Contract - Adoption.sol  
+
+```javascript
+  pragma solidity ^0.5.0;
+
+  contract Adoption {
+    address[16] public adopters;
+  }
+```
+
+++++
+
+## WORKSHOP - DApp PetShop 
+### Contract - Adoption.sol 
+
+Create an function for adopting a pet!
+ - name: `adopt`
+ - parameters: `petId` "must be unsigned integer" 
+ - return: unsigned integer pedId
+ 
+> This method **must revert the state of contract in case of pedId are not valid!**
+
+```javascript
+  pragma solidity ^0.5.0;
+
+  contract Adoption {
+    address[16] public adopters;
+    
+    // Adopting a pet
+    <- function here ->
+
+  }
+
+```
+++++
+
+
+## WORKSHOP - DApp PetShop 
+### Contract - Adoption.sol  
+
+```javascript
+  ...
+   // Adopting a pet
+    function adopt(uint petId) public returns (uint) {
+        require(petId >= 0 && petId <= 15);
+
+        adopters[petId] = msg.sender;
+        return petId;
+    }
+  ...
+```
+
+++++
+
+## WORKSHOP - DApp PetShop 
+### Contract - Adoption.sol  
+
+At the end we need an method for `getAdopters`:
+- return: array of adopters
+
+```javascript
+  ...
+    function adopt(uint petId) public returns (uint) { ... }
+
+    // Retrieving the adopters
+    <- function here ->
+  ...
+```
+
+++++
+
+
+## WORKSHOP - DApp PetShop 
+### Contract - Adoption.sol  
+
+At the end we need an method for `getAdopters`:
+
+return: array of adopters
+
+```javascript
+  ...
+    function adopt(uint petId) public returns (uint) { ... }
+
+    // Retrieving the adopters
+    function getAdopters() public view returns (address[16] memory) {
+        return adopters;
+    }
+  ...
+```
+++++
+
+
+## WORKSHOP - DApp PetShop 
+### Compile the contract 
+
+
+```shell 
+truffle compile
+```
+
+![lets compile](https://media.giphy.com/media/1qRjAceZg4OPu/giphy.gif)
+
+
+++++
+
+
+## WORKSHOP - DApp PetShop 
+### Jump to migrations
+
+- Copy the existing file of migrations
+
+var Adoption = artifacts.require("Adoption");
+
+```javascript
+
+  module.exports = function(deployer) {
+    deployer.deploy(Adoption);
+  };
+
+``` 
+
+++++
+
+## WORKSHOP - DApp PetShop 
+### Run migrations
+
+```shell
+truffle migrate
+``` 
+
+++++
+
+## WORKSHOP - DApp PetShop 
+### Jump to `src` folder
+
+This is or frontend of Adopters smart contract.
+
+- app.js
+
+++++
+
+
