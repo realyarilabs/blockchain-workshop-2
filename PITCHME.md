@@ -1029,11 +1029,11 @@ At the end we need an method for `getAdopters`:
 return: array of adopters
 
 ```javascript
-  function adopt(uint petId) public returns (uint) { ... }
-  // Retrieving the adopters
-  function getAdopters() public view returns (address[16] memory) {
-      return adopters;
-  }
+function adopt(uint petId) public returns (uint) { ... }
+// Retrieving the adopters
+function getAdopters() public view returns (address[16] memory) {
+  return adopters;
+}
 ```
 +++
 
@@ -1060,10 +1060,9 @@ truffle compile
 var Adoption = artifacts.require("Adoption");
 
 ```javascript
-
-  module.exports = function(deployer) {
-    deployer.deploy(Adoption);
-  };
+module.exports = function(deployer) {
+  deployer.deploy(Adoption);
+};
 
 ``` 
 
@@ -1085,6 +1084,6 @@ This is or frontend of Adopters smart contract.
 
 - app.js
 
-+++
+---
 
 
