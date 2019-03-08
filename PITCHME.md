@@ -742,6 +742,10 @@ You need to run a local or remote Ethereum node to use this library.
 
 [Web3.js](https://github.com/ethereum/web3.js)
 
++++
+
+## Interact with Smart Contracts
+
 Similar libraries in other languages
   - Python Web3.py
   - Haskell hs-web3
