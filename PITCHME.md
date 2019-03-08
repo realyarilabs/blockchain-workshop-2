@@ -965,15 +965,14 @@ pet_shop_dapp
 
 +++
 
-## WORKSHOP - DApp PetShop 
-### Contract - Adoption.sol 
+## Contract - Adoption.sol 
 
 Create an function for adopting a pet!
  - name: `adopt`
  - parameters: `petId` "must be unsigned integer" 
- - return: unsigned integer pedId
+ - return: unsigned integer petId
  
-> This method **must revert the state of contract in case of pedId are not valid!**
+> This method **must revert the state of contract in case of petId are not valid!**
 
 ```javascript
   pragma solidity ^0.5.0;
@@ -994,21 +993,19 @@ Create an function for adopting a pet!
 ### Contract - Adoption.sol  
 
 ```javascript
-  ...
-   // Adopting a pet
-    function adopt(uint petId) public returns (uint) {
-        require(petId >= 0 && petId <= 15);
+// Adopting a pet
+function adopt(uint petId) public returns (uint) {
+  require(petId >= 0 && petId <= 15);
 
-        adopters[petId] = msg.sender;
-        return petId;
-    }
-  ...
+  adopters[petId] = msg.sender;
+  return petId;
+}
 ```
 
 +++
 
 ## WORKSHOP - DApp PetShop 
-### Contract - Adoption.sol  
+#### Contract - Adoption.sol  
 
 At the end we need an method for `getAdopters`:
 - return: array of adopters
@@ -1016,7 +1013,6 @@ At the end we need an method for `getAdopters`:
 ```javascript
   ...
     function adopt(uint petId) public returns (uint) { ... }
-
     // Retrieving the adopters
     <- function here ->
   ...
@@ -1026,27 +1022,24 @@ At the end we need an method for `getAdopters`:
 
 
 ## WORKSHOP - DApp PetShop 
-### Contract - Adoption.sol  
+#### Contract - Adoption.sol  
 
 At the end we need an method for `getAdopters`:
 
 return: array of adopters
 
 ```javascript
-  ...
-    function adopt(uint petId) public returns (uint) { ... }
-
-    // Retrieving the adopters
-    function getAdopters() public view returns (address[16] memory) {
-        return adopters;
-    }
-  ...
+  function adopt(uint petId) public returns (uint) { ... }
+  // Retrieving the adopters
+  function getAdopters() public view returns (address[16] memory) {
+      return adopters;
+  }
 ```
 +++
 
 
 ## WORKSHOP - DApp PetShop 
-### Compile the contract 
+#### Compile the contract 
 
 
 ```shell 
@@ -1060,7 +1053,7 @@ truffle compile
 
 
 ## WORKSHOP - DApp PetShop 
-### Jump to migrations
+#### Jump to migrations
 
 - Copy the existing file of migrations
 
@@ -1077,7 +1070,7 @@ var Adoption = artifacts.require("Adoption");
 +++
 
 ## WORKSHOP - DApp PetShop 
-### Run migrations
+#### Run migrations
 
 ```shell
 truffle migrate
@@ -1086,7 +1079,7 @@ truffle migrate
 +++
 
 ## WORKSHOP - DApp PetShop 
-### Jump to `src` folder
+#### Jump to `src` folder
 
 This is or frontend of Adopters smart contract.
 
