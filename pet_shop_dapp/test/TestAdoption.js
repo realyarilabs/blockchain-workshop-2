@@ -1,47 +1,34 @@
 
 const Adoption = artifacts.require("Adoption");
 
-contract("MetaCoin", (accounts) => {
+contract("MetaCoin", ([adopterA, adopterB, adopterC, ...accounts ]) => {
     // get instance of deployed contract of the adoption contract to be tested
     let adoptionInstance
 
     // The id of the pet that will be used for testing
     let expectedPetId = 8;
+    
+    //The expected owner of adopted pet
+    let expectedAdopter = adopterA;
 
     before("init instance", async () => {
         adoptionInstance = await Adoption.deployed();
     })
 
     it("Testing the adopt() function", () => {
-        const returnedId = adoption.adopt(expectedPetId);
-        Assert.equal(returnedId, expectedPetId, "Adoption of the expected pet should match what is returned.");
+        const returnedId = adoptionInstance.adopt(expectedPetId);
+        assert.equal(returnedId, expectedPetId, "Adoption of the expected pet should match what is returned.");
     });
 
-})
+    it("Testing retrieval of a single pet's owner", () => {
+        const adopterAddress = adoptionInstance.adopters(expectedPetId);
+        assert.equal(adopterAddress, expectedAdopter, "Owner of the expected pet should be this contract");
+    });
 
-
-contract TestAdoption {
-    //The expected owner of adopted pet is this contract
-    address expectedAdopter = address(this);
-
-    // Testing the adopt() function
-    function testUserCanAdoptPet() public {
-       
-    }
-
-    // Testing retrieval of a single pet's owner
-    function testGetAdopterAddressByPetId() public {
-        address adopter = adoption.adopters(expectedPetId);
-
-        Assert.equal(adopter, expectedAdopter, "Owner of the expected pet should be this contract");
-    }
-
-    // Testing retrieval of all pet owners
-    function testGetAdopterAddressByPetIdInArray() public {
+    it(" Testing retrieval of all pet owners", () => {
         // Store adopters in memory rather than contract's storage
-        address[16] memory adopters = adoption.getAdopters();
-
-        Assert.equal(adopters[expectedPetId], expectedAdopter, "Owner of the expected pet should be this contract");
-    }
+        const adopters = adoption.getAdopters();
+        assert.equal(adopters[expectedPetId], expectedAdopter, "Owner of the expected pet should be this contract");
+    });
     
-}
+})
