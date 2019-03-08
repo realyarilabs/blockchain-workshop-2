@@ -229,6 +229,7 @@ Smart contract flow of data
 
 ## Questions ?
 
+---
 ### Emanuel Mota 
 ### http://yarilabs.com  
 ### @yarilabs
