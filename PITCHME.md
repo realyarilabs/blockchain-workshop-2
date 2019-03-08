@@ -1080,7 +1080,7 @@ truffle migrate
 ## WORKSHOP - DApp PetShop 
 #### Jump to `src` folder
 
-This is or frontend of Adopters smart contract.
+This is our frontend of Adopters smart contract.
 
 - app.js
 
