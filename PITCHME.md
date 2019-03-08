@@ -247,15 +247,7 @@ Smart contract flow of data
 
 ---
 
-## Helder Pinto - @helderjnpinto
-
-Developer at Yari Labs
-
-helder@yarilabs.com
-
----
-
-## Helder Pinto - @helderjnpinto
+## Helder Pinto 
 
 Developer at Yari Labs
 
@@ -339,6 +331,10 @@ The address type comes in two flavours, which are largely identical:
 - `address payable`: Same as address, but with the additional members transfer and send.
 
 +++
+
+### Solidity 
+Address
+
 
 Type conversions:
 >  Implicit conversions from address payable to address are allowed, whereas conversions from address to address payable are not possible (the only way to perform such a conversion is by using an intermediate conversion to uint160).
@@ -452,33 +448,39 @@ Function types
 Visibility and Getters 
 
 * **external** - External functions are part of the contract interface, which means they can be called from other contracts and via transactions. An external function f cannot be called internally (i.e. f() does not work, but this.f() works). External functions are sometimes more efficient when they receive large arrays of data.
-
-* **public** - Public functions are part of the contract interface and can be either called internally or via messages. For public state variables, an automatic getter function (see below) is generated.
-
 +++
 
 ### Solidity 
 Visibility and Getters 
 
 * **internal** - Those functions and state variables can only be accessed internally (i.e. from within the current contract or contracts deriving from it), without using this.
-
-* **private** - Private functions and state variables are only visible for the contract they are defined in and not in derived contracts.
-
 +++
-
 
 
 ### Solidity 
-More about functions 
+Visibility and Getters 
 
-```javascript
-  string greeting = "Whazaaa ?";
-
-  function sayHello() public returns (string) {
-      return greeting;
-  }
-```
+* **public** - Public functions are part of the contract interface and can be either called internally or via messages. For public state variables, an automatic getter function (see below) is generated.
 +++
+
+### Solidity 
+Visibility and Getters 
+
+* **private** - Private functions and state variables are only visible for the contract they are defined in and not in derived contracts.
++++
+
+### Solidity 
+Visibility and Getters 
+
+* **internal** - Those functions and state variables can only be accessed internally (i.e. from within the current contract or contracts deriving from it), without using this.
++++
+
+### Solidity 
+Visibility and Getters 
+
+* **private** - Private functions and state variables are only visible for the contract they are defined in and not in derived contracts.
++++
+
 
 ### Solidity 
 Function Returns 
@@ -503,7 +505,7 @@ Function Returns
 +++
 
 ### Solidity 
-More on functions Modifiers
+Functions Modifiers
 
 ``` javascript
   modifier onlyAfter(uint _time) { require (now >= _time); _; }
@@ -571,7 +573,7 @@ contract SimpleAuction {
 Error Handling
 
 - ** assert(bool condition) **: 
- throws if the condition is not met - to be **used for internal errors**.
+ throws if the condition is not met - to be used for **internal errors**.
 
 +++
 
@@ -579,7 +581,7 @@ Error Handling
 Error Handling
 
 - ** require(bool condition) **:
- throws if the condition is not met - to be used for errors in **inputs**.
+ throws if the condition is not met - to be used for **errors in inputs**.
 
 +++
 
@@ -635,6 +637,9 @@ contract A {
 ```
 +++
 
+
++++
+
 ## Important Design Notes / style guide - Functions signature order
 
 The visibility **modifier** for a function should come before any custom modifiers.
@@ -675,17 +680,15 @@ contract Foo {
 }
 
 ```
-
-+++ 
++++
 
 ## Interact with Smart Contracts
 
-The Method ID. This is derived as the first 4 bytes of the "sha3 ou Keccak256" Keccak hash of the ASCII form of the signature baz(uint32,bool)
+The Method ID. This is derived as the first 4 bytes of the "sha3 or Keccak256" Keccak hash of the ASCII form of the signature baz(uint32,bool)
 
 ```javascript
 sha3("baz(uint32,bool)") // 0xcdcd77c0
 ```
-
 [More in contract ABI Specification](https://solidity.readthedocs.io/en/v0.5.5/abi-spec.html#abi)
 
 +++
@@ -758,13 +761,22 @@ Similar libraries in other languages
 ## Interact with Smart Contracts
 
 Truffle is the most popular development framework for Ethereum:
-[Truffle framework](https://truffleframework.com)
 
+- [Truffle framework](https://truffleframework.com)
+
++++
+
+## Interact with Smart Contracts
 Test net:
-[Ganache](https://github.com/trufflesuite/ganache/releases)
+
+- [Ganache](https://github.com/trufflesuite/ganache/releases)
++++
+
+## Interact with Smart Contracts
 
 Browser wallet:
-[Metamask](https://metamask.io/)
+
+- [Metamask](https://metamask.io/)
 
 ---
 
